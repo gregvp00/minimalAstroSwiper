@@ -1,4 +1,6 @@
 ---
+import "swiper/css";
+
 interface Props {
   title: string;
 }
@@ -17,7 +19,25 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1713312000&semt=sph"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      import Swiper from "swiper";
+      const swiper = new Swiper(".swiper", {});
+    </script>
   </body>
 </html>
 <style is:global>
