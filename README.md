@@ -4,7 +4,7 @@
 | [npx astro add tailwind]  | [Tailwind integration] |
 | [npm i swiper ]           | [Swiper integration]   |
 
-````
+```
 
 		<div class="swiper">
 				<div class="swiper-wrapper">
@@ -19,5 +19,4 @@
 			const swiper = new Swiper('.swiper', {});
 		</script>
 
-        ```
-````
+```
